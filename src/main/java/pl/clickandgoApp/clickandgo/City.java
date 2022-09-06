@@ -1,4 +1,4 @@
-package pl.clickandgo.clickandgo.domain;
+package pl.clickandgoApp.clickandgo;
 
 import java.util.Objects;
 

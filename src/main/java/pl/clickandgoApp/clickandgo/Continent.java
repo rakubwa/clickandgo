@@ -1,25 +1,23 @@
-package pl.clickandgo.clickandgo.domain;
+package pl.clickandgoApp.clickandgo;
 
 import java.util.Objects;
 
-public class Airport {
+public class Continent {
 
     private final String id;
     private final String name;
-    private final String cityId;
-
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Airport airport = (Airport) o;
-        return Objects.equals(id, airport.id) && Objects.equals(name, airport.name) && Objects.equals(cityId, airport.cityId);
+        Continent continent = (Continent) o;
+        return Objects.equals(id, continent.id) && Objects.equals(name, continent.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, cityId);
+        return Objects.hash(id, name);
     }
 
     public String getId() {
@@ -30,22 +28,16 @@ public class Airport {
         return name;
     }
 
-    public String getCityId() {
-        return cityId;
-    }
-
-    public Airport(String id, String name, String cityId) {
+    public Continent(String id, String name) {
         this.id = id;
         this.name = name;
-        this.cityId = cityId;
     }
 
     @Override
     public String toString() {
-        return "Airport{" +
+        return "Continent{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
-                ", cityId='" + cityId + '\'' +
                 '}';
     }
 }
