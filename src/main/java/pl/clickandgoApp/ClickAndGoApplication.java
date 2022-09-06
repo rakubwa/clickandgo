@@ -1,4 +1,4 @@
-package pl.clickandgo.clickandgo;
+package pl.clickandgoApp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
