@@ -1,4 +1,4 @@
-package pl.clickandgoApp.clickandgo;
+package pl.clickandgoApp.clickandgo.destination;
 
 
 import java.util.Objects;
